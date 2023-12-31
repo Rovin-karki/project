@@ -42,7 +42,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.8.0,hostpython3==3.8.0,kivy,pywebview 
+requirements = python3==3.8.0,hostpython3==3.8.0,kivy,https://github.com/r0x0r/pywebview.git
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
