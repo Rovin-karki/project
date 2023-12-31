@@ -1,16 +1,14 @@
 from kivy.app import App
-from kivy.uix.button import Button
-
+import webview
 class SimpleApp(App):
     def build(self):
-        # Create a button with a callback function
-        button = Button(text='Hello, Kivy!', on_press=self.on_button_press)
-        return button
+            return
+def change_title(window):
+  window.change_title('pywebview whoa')
 
-    def on_button_press(self, instance):
-        # Define the action when the button is pressed
-        print('Button pressed!')
-
+window = webview.create_window('pywebview wow', 'https://pywebview.flowrl.com')
+webview.start(change_title, window)
+    
 # Run the app
 if __name__ == '__main__':
     SimpleApp().run()
